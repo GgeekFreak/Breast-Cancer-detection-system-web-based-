@@ -1,0 +1,67 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta tags -->
+	<title>Appoint My Doctor Form a Simple Appointment form Responsive Widget :: w3layouts</title>
+	<meta name="keywords" content="Appoint My Doctor Form Responsive widget, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<!-- google fonts  -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700" rel="stylesheet">
+</head>
+<body>
+	<div class="w3ls-banner">
+	<div class="heading">
+		<h1>BreastCancer diagnosis System </h1>
+	</div>
+		<div class="container">
+           <div class="heading">
+               <h2>Patient information</h2>
+            </div>
+			<div class="agile-form">
+				<form action="/home" method="post">
+					<ul class="field-list">
+						<li>
+
+							<div class="form-input">
+                                <input class="pID" type="number" name="patient_id" placeholder="Enter Patient ID" required >
+								<input class="pname" type="text" name="patient_name" placeholder="Enter Patient Name" required>
+                                <input class="state" type="text" name="state" placeholder="Enter Patient State" required>
+                                <input class="pID" type="number" name="patient_age" placeholder="Enter Patient Age" required min="1" max="100">
+                                <div class="heading1">
+				                    <h2>FNA Charachteristics</h2>
+
+			                    </div>
+                                <input class="feature1" type="number" name="f1" placeholder="Clump Thickness" required min="0" max="10">
+                                <input class="feature2" type="number" name="f2" placeholder="Cell Size" required min="0" max="10">
+                                <input class="feature3" type="number" name="f3" placeholder="Cell Shape" required min="0" max="10">
+                                <input class="feature4" type="number" name="f4" placeholder="Marginal Adhesion"required min="0" max="10"  >
+                                <input class="feature5" type="number" name="f5" placeholder="Single Ephithelial Cell Size"required min="0" max="10"  >
+                                <input class="feature6" type="number" name="f6" placeholder="Bare Nuclei"  required min="0" max="10">
+                                <input class="feature7" type="number" name="f7" placeholder="Bland Chromatin"  required min="0" max="10">
+                                <input class="feature8" type="number" name="f8" placeholder="Normal Nuclei"  required min="0" max="10">
+                                <input class="feature9" type="number" name="f9" placeholder="Mitosis"  required min="0" max="10">
+                                <input class="Result" type="submit" name="result" value="Show Result">
+                                <p>{{ variable }}</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
